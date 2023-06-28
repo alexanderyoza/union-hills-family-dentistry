@@ -7,7 +7,6 @@ function App() {
     return (
         <div className='App-Container'>
             <div className='App'>
-                <div className='bg'></div>
                 <Router>
                     <RouteChange>
                         <Routes>

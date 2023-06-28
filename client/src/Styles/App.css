@@ -1,20 +1,14 @@
 .App-Container {
+  margin-top: max(14vh, 100px);
   width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .App {
   width:  100vw;
   min-width: 350px;
   max-width: 2500px;
-  min-height: 100vh;
-}
-
-.bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: white;
-  z-index: -200;
+  min-height: min(86vh, calc(100vh - 100px));
 }
