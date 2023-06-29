@@ -1,9 +1,27 @@
 import '../Styles/Home.css';
+import { useState, useEffect } from 'react';
 import Header from './Header';
 import homepage from '../Assets/ocean.jpg';
 import SiteOverview from './SiteOverview';
+import SiteOverviewMobile from './SiteOverviewMobile';
 
 function Home() {
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+      const checkMobile = () => {
+          const narrow = window.innerWidth <= 700;
+          setIsMobile(narrow);
+      };
+      checkMobile();
+      window.addEventListener('resize', checkMobile);
+      return () => {
+          window.removeEventListener('resize', checkMobile);
+      };
+
+  }, []);
+
   return (
     <div className='home-container'>
       <Header active='home'/>
@@ -28,7 +46,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <SiteOverview/>
+      {isMobile ? <SiteOverviewMobile/> : <SiteOverview/>}
     </div>
   )
 }

@@ -1,70 +1,40 @@
 .site-overview {
     width: 100%;
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.overview-section {
+    width: 100%;
+    height: min(86vh, calc(100vh - 100px));
+    display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .overview-side {
     width: 50%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    background-color: white;
-}
-
-.overview-one {
-    width: 100%;
-    height: min(86vh, calc(100vh - 100px));
-}
-
-.overview-two {
-    width: 100%;
-    height: min(172vh, calc(200vh - 200px));
-}
-
-.overview-three {
-    width: 100%;
-    height: min(258vh, calc(300vh - 300px));
-}
-
-
-.overview-four {
-    width: 100%;
-    height: min(344vh, calc(400vh - 400px));
-    /* height: min(258vh, calc(300vh - 300px)); */
-}
-
-.overview-stick {
-    position: -webkit-sticky;
-    position: sticky;
-    height: min(86vh, calc(100vh - 100px));
-    top: max(14vh, 100px);
-}
-
-.overview-content {
-    width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: min(max(15px, calc(8px + 2vw)), 60px);
+    font-size: min(max(16px, calc(8px + 2vw)), 60px);
 }
 
-.overview-scroll {
-    width: 100%;
-    height: min(86vh, calc(100vh - 100px));
+#overview-logo {
+    width: 80%;
 }
 
-.overview-header-text {
+.welcome-text {
+    font-size: 0.6em;
+    width: 80%;
+}
+
+.overview-headers {
     width: 80%;
     font-size: 1em;
-}
-
-.overview-text {
-    width: 80%;
-    font-size: 0.7em;
 }
 
 .overview-full-image {
@@ -73,11 +43,48 @@
     object-fit: cover;
 }
 
-#overview-logo {
-    width: 80%;
+#overview-request-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: white;
 }
 
-#overview-request {
-    padding: 10px;
-    background-color: blue;
+#overview-request-image-container {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.4);
 }
+
+#overview-request-image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -5;
+}
+
+#overview-request-overlay {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+#overview-request-overlay div {
+    font-size: 1em;
+}
+
+#overview-request-button {
+    background-color: #FFB800;
+    padding: 10px;
+}
+
+
