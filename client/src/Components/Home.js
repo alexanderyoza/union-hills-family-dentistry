@@ -1,6 +1,7 @@
 import '../Styles/Home.css';
 import Header from './Header';
-import homepage from '../Assets/ocean.jpg'
+import homepage from '../Assets/ocean.jpg';
+import SiteOverview from './SiteOverview';
 
 function Home() {
   return (
@@ -27,6 +28,7 @@ function Home() {
           </div>
         </div>
       </div>
+      <SiteOverview/>
     </div>
   )
 }
