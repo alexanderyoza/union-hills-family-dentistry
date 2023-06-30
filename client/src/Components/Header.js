@@ -84,18 +84,18 @@ function Header(props) {
                         <Link className={props.active === 'home' ? 'active-header-itm': 'header-itm'} to='/'>
                             <div className='link'>Home</div>
                         </Link>
-                        <Link className={props.active === 'office' ? 'active-header-itm': 'header-itm'} to='/'>
+                        <Link className={props.active === 'office' ? 'active-header-itm': 'header-itm'} to='/office'>
                             <div className='link'>Office</div>
                         </Link>
-                        <Link className={props.active === 'services' ? 'active-header-itm': 'header-itm'} to='/'>
+                        <Link className={props.active === 'services' ? 'active-header-itm': 'header-itm'} to='/services'>
                             <div className='link'>Services</div>
                         </Link>
-                        <Link className={props.active === 'staff' ? 'active-header-itm': 'header-itm'} to='/'>
-                            <div className='link'>Staff</div>
+                        <Link className={props.active === 'forms' ? 'active-header-itm': 'header-itm'} to='/forms'>
+                            <div className='link'>Forms</div>
                         </Link>
-                        <Link className={props.active === 'schedule' ? 'active-header-itm': 'header-itm'} to='/'>
+                        <a href='#' target='_blank' rel="noreferrer noopener" className='header-itm'>
                             <div className='link'>Schedule</div>
-                        </Link>
+                        </a>
                     </div>
                     <div className='header-rank'>
                         <img src={topdentist} alt='phoenix top ranked dentist' />

@@ -40,7 +40,7 @@ function SiteOverviewMobile() {
             alt='our team'
             content={
                 <div className='mobile-overview-header'>
-                    Meet our team
+                    Learn about our office and our team
                 </div>
             }
         />

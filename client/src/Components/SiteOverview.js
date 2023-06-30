@@ -41,7 +41,7 @@ function SiteOverview() {
             </div>
             <div className='overview-side'>
                 <div className='overview-header'>
-                    Meet our team
+                    Learn about our office and our team
                 </div>
                 
             </div>

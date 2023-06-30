@@ -1,0 +1,107 @@
+.office-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.office {
+    width: 100%;
+}
+
+.office-info {
+    width: 100%;
+    height: min(86vh, calc(100vh - 100px));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.office-info-side {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.office-content {
+    width: 70%;
+    height: 90%;
+    font-size: min(max(16px, calc(8px + 2vw)), 50px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.office-title {
+    width: 100%;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.office-address {
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 0.8em;
+}
+
+.office-address a {
+    color: black;
+    transition: color 0.3s;
+    width: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.office-address a:hover {
+    color: #0F62AF;
+}
+
+.office-phone {
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 0.8em;
+}
+
+.office-phone a {
+    color: black;
+    transition: color 0.3s;
+}
+
+.office-phone a:hover {
+    color: #0F62AF;
+}
+
+.office-hours {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.hours-title {
+    font-size: 0.8em;
+}
+
+.office-day {
+    font-size: 0.7em;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.office-info-side img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
