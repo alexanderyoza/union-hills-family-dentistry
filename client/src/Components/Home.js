@@ -14,6 +14,7 @@ function Home() {
           const narrow = window.innerWidth <= 700;
           setIsMobile(narrow);
       };
+      window.scrollTo(0, 0);
       checkMobile();
       window.addEventListener('resize', checkMobile);
       return () => {

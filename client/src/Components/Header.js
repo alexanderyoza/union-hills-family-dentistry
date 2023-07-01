@@ -57,18 +57,15 @@ function Header(props) {
                         <Link onClick={closeMenu} className={props.active === 'home' ? 'active-header-itm-mobile': 'header-itm-mobile'} to='/'>
                             <div className='link-mobile'>Home</div>
                         </Link>
-                        <Link onClick={closeMenu} className={props.active === 'office' ? 'active-header-itm-mobile': 'header-itm-mobile'} to='/'>
+                        <Link onClick={closeMenu} className={props.active === 'office' ? 'active-header-itm-mobile': 'header-itm-mobile'} to='/office'>
                             <div className='link-mobile'>Office</div>
                         </Link>
-                        <Link onClick={closeMenu} className={props.active === 'services' ? 'active-header-itm-mobile': 'header-itm-mobile'} to='/'>
+                        <Link onClick={closeMenu} className={props.active === 'services' ? 'active-header-itm-mobile': 'header-itm-mobile'} to='/services'>
                             <div className='link-mobile'>Services</div>
                         </Link>
-                        <Link onClick={closeMenu} className={props.active === 'staff' ? 'active-header-itm-mobile': 'header-itm-mobile'} to='/'>
-                            <div className='link-mobile'>Staff</div>
-                        </Link>
-                        <Link onClick={closeMenu} className={props.active === 'schedule' ? 'active-header-itm-mobile': 'header-itm-mobile'} to='/'>
+                        <a href='#' target='_blank' rel="noreferrer noopener" className='header-itm-mobile'>
                             <div className='link-mobile'>Schedule</div>
-                        </Link>
+                        </a>
                     </div>
                 </div>
             )

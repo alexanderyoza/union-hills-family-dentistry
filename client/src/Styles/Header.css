@@ -167,7 +167,17 @@
     to {left: 0vw}
 }
 
+@-webkit-keyframes menuappear {
+    from {left: 100vw}
+    to {left: 0vw}
+}
+
 @keyframes menudisappear {
+    from {left: 0vw}
+    to {left: 100vw}
+}
+
+@-webkit-keyframes menudisappear {
     from {left: 0vw}
     to {left: 100vw}
 }
@@ -184,6 +194,7 @@
     width: 100%;
     background-color: white;
     animation: menuappear 1s 1;
+    -webkit-animation: menuappear 1s 1;
     z-index: 100;
 }
 
@@ -199,6 +210,7 @@
     width: 100%;
     background-color: white;
     animation: menudisappear 1s 1;
+    -webkit-animation: menudisappear 1s 1;
     z-index: 100;
 }
 
@@ -212,6 +224,16 @@
     to {transform: rotate(1440deg)}
 }
 
+@-webkit-keyframes exitspinopen {
+    from {-webkit-transform: rotate(1440deg)}
+    to {-webkit-transform: rotate(0)}
+}
+
+@-webkit-keyframes exitspinclose {
+    from {-webkit-transform: rotate(0)}
+    to {-webkit-transform: rotate(1440deg)}
+}
+
 .menu-exit-header-menu-mobile {
     position: absolute;
     top: 5%;
@@ -221,6 +243,7 @@
     justify-content: center;
     align-items: center;
     animation: exitspinopen 1s 1;
+    -webkit-animation: exitspinopen 1s 1;
 }
 
 .menu-exit-header-menu-mobile-invisible {
@@ -232,6 +255,7 @@
     justify-content: center;
     align-items: center;
     animation: exitspinclose 1s 1;
+    -webkit-animation: exitspinclose 1s 1;
 }
 
 .menu-exit-header-menu-mobile img {
@@ -259,6 +283,7 @@
     justify-content: center;
     align-items: center;
     color: inherit;
+    font-size: inherit;
     width: calc(100%/5);
 }
 
