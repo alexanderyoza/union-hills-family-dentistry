@@ -4,6 +4,7 @@ import Home from './Home';
 import Office from './Office';
 import Services from './Services';
 import Forms from './Forms';
+import Staff from './Staff';
 import RouteChange from './RouteChange';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
                             <Route exact path='/' element={< Home />}></Route>
                             <Route exact path='/office' element={< Office />}></Route>
                             <Route exact path='/services' element={< Services />}></Route>
+                            <Route exact path='/staff' element={< Staff />}></Route>
                             <Route exact path='/forms' element={< Forms />}></Route>
                         </Routes>
                     </RouteChange>

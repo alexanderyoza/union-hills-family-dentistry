@@ -18,7 +18,7 @@
 }
 
 .header {
-    font-size: min(max(16px, calc(14px + 1vw)), 80px);
+    font-size: min(max(16px, calc(12px + 1vw)), 80px);
     height: 90%;
     width: 95%;
     max-width: calc(0.95 * 2500px);
@@ -40,9 +40,9 @@
 .header-menu {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    width: 60%;
+    width: 80%;
     background-color: transparent;
 }
 
@@ -55,7 +55,6 @@
     justify-content: center;
     align-items: center;
     color: #0F62AF;
-    width: calc(100%/5);
 }
 
 .header-itm {
@@ -65,7 +64,6 @@
     justify-content: center;
     align-items: center;
     color: inherit;
-    width: calc(100%/5);
 }
 
 .header-itm:hover .link{

@@ -10,19 +10,9 @@
     width: 100%;
 }
 
-.office-info-container {
+.office-info {
     width: 100%;
     height: min(86vh, calc(100vh - 100px));
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-}
-
-.office-info {
-    position: relative;
-    width: 100%;
-    height: calc(100% - 100px);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,13 +20,13 @@
 }
 
 .office-info-side {
-    width: 50%;
+    width: 70%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     color: black;
-    font-size: min(max(16px, calc(8px + 1.5vw)), 50px);
+    font-size: min(max(16px, calc(12px + 1.5vw)), 50px);
 }
 
 .office-info-front {
@@ -99,7 +89,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-    font-size: 0.6em;
+    font-size: 0.7em;
 }
 
 .office-address a:hover {
@@ -115,7 +105,7 @@
 .office-phone a {
     color: inherit;
     transition: color 0.3s;
-    font-size: 0.6em;
+    font-size: 0.7em;
 }
 
 .office-phone a:hover {
@@ -136,7 +126,7 @@
 }
 
 .office-day {
-    font-size: 0.6em;
+    font-size: 0.7em;
     width: 75%;
     display: flex;
     justify-content: space-between;
@@ -147,33 +137,4 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.office-down-arrow {
-    height: 100px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-@-webkit-keyframes bounce { 
-    0%, 100% {-webkit-transform: translateY(0);}  
-    50% {-webkit-transform: translateY(-5px);} 
- } 
- 
- @keyframes bounce { 
-    0%, 100% {transform: translateY(0);} 
-    50% {transform: translateY(-5px);} 
- }
-
-.office-down-arrow img {
-    height: 30px;
-    animation-iteration-count: infinite;
-    -webkit-animation-name: bounce; 
-    animation-name: bounce; 
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s; 
-    -webkit-animation-fill-mode: both; 
-    animation-fill-mode: both; 
 }

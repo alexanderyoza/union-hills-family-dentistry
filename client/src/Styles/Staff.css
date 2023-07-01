@@ -4,8 +4,103 @@
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+    font-size: min(max(16px, calc(12px + 2vw)), 50px);
 }
 
 .staff-image {
     width: 100%;
+}
+
+.staff-title {
+    width: 90%;
+    height: 20vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: black;
+}
+
+.staff-content {
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dentist {
+    position: relative;
+    width: 100%;
+    min-height: min(86vh, calc(100vh - 100px));
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+.dentist-image-side {
+    position: sticky;
+    position: -webkit-sticky;
+    top: max(14vh, 100px);
+    width: 40%;
+    height: min(86vh, calc(100vh - 100px));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dentist-image-side img {
+    width: 60%;
+}
+
+.dentist-blurb-side {
+    width: 60%;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dentist-name {
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.dentist-blurb {
+    width: 90%;
+    font-size: max(0.6em, 24px);
+}
+
+.dentist-blurb div {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.dentist-qualification {
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.dentist-qualification-category {
+    width: 100%;
+    font-size: max(0.8em, 32px);
+    margin-bottom: 10px;
+}
+
+.dentist-qualification-list {
+    width: 100%;
+    font-size: max(0.6em, 24px);
+}
+
+.dentist-qualification-item {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.dentist-qualification-name {
+    width: 100%;
+}
+
+.dentist-qualification-specification {
+    width: 100%;
+    font-size: 0.8em;
 }
