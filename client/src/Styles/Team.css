@@ -1,42 +1,100 @@
 
-.team {
-    position: relative;
-    width: 100%;
-    min-height: min(86vh, calc(100vh - 100px));
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row-reverse;
+@media (max-width: 700px) {
+    .team {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 80px;
+    }
+
+    .team-image-side {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    .team-image-side img {
+        width: 50%;
+    }
+    
+    .team-blurb-side {
+        width: 90%;
+        font-size: 1em;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    
+    .team-name {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .team-blurb {
+        width: 100%;
+        font-size: max(0.6em, 20px);
+    }
+    
+    .team-blurb div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
 
-.team-image-side {
-    position: sticky;
-    position: -webkit-sticky;
-    top: max(14vh, 100px);
-    width: 40%;
-    height: min(86vh, calc(100vh - 100px));
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@media (min-width: 701px) {
+    .team {
+        position: relative;
+        width: 100%;
+        min-height: min(86vh, calc(100vh - 100px));
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+
+    .team-image-side {
+        position: sticky;
+        position: -webkit-sticky;
+        top: max(14vh, 100px);
+        width: 40%;
+        height: min(86vh, calc(100vh - 100px));
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .team-image-side img {
+        width: 60%;
+    }
+    
+    .team-blurb-side {
+        width: 60%;
+        font-size: 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .team-name {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    
+    .team-blurb {
+        width: 90%;
+        font-size: max(0.6em, 24px);
+    }
+    
+    .team-blurb div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
 
-.team-image-side img {
-    width: 60%;
-}
 
-.team-blurb-side {
-    width: 60%;
-    font-size: 1em;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
 
-.team-name {
-    width: 90%;
-    margin-bottom: 20px;
-}
-
-.team-blurb {
-    width: 90%;
-    font-size: max(0.6em, 24px);
-}

@@ -1,10 +1,23 @@
 import React from 'react';
 import '../Styles/Staff.css';
+import { useEffect } from 'react';
 import teamnarrow from '../Assets/team-narrow.jpg';
 import Header from './Header';
 import ethan from '../Assets/Staff/ethan.jpeg';
+import Blanca from './Team/Blanca';
+import Angie from './Team/Angie';
+import Kirsten from './Team/Kirsten';
+import Ann from './Team/Ann';
+import Jamie from './Team/Jamie';
+import Desiree from './Team/Desiree';
+import Shelby from './Team/Shelby';
+
 
 function Staff() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
 
     return (
         <div className='staff-container'>
@@ -137,7 +150,13 @@ function Staff() {
 
                     </div>
                 </div>
-                
+                <Blanca />
+                <Angie />
+                <Kirsten />
+                <Ann />
+                <Jamie />
+                <Desiree />
+                <Shelby />
             </div>
         </div>
     )

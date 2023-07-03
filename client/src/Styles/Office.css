@@ -11,7 +11,10 @@
 }
 
 .office-info {
+    position: relative;
+    top: 0;
     width: 100%;
+    min-height: 500px;
     height: min(86vh, calc(100vh - 100px));
     display: flex;
     justify-content: space-between;

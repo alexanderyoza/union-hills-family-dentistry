@@ -2,7 +2,6 @@ import '../Styles/Office.css';
 import Header from './Header';
 import { useState, useEffect } from 'react';
 import officefront from '../Assets/officefront.jpg';
-import down from '../Assets/down.png'
 
 function Office() {
 
