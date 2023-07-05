@@ -1,9 +1,12 @@
 import '../Styles/SiteOverviewMobile.css';
+import { Link } from 'react-router-dom';
 import OverlayBlock from './OverlayBlock';
 import wave from '../Assets/wave.jpg';
 import cartoon from '../Assets/cartoon.jpg';
 import megan from '../Assets/megan.jpg';
 import team from '../Assets/team.jpg';
+import office from '../Assets/officefront.jpg';
+import forms from '../Assets/forms.jpeg';
 
 function SiteOverviewMobile() {
   return (
@@ -29,20 +32,40 @@ function SiteOverviewMobile() {
             picture={cartoon}
             alt='our services'
             content={
-                <div className='mobile-overview-header'>
+                <Link className='mobile-overview-header' to='/services'>
                     Learn more about the services we offer
-                </div>
+                </Link>
             }
         />
         
         <OverlayBlock
-            picture={team}
-            alt='our team'
+            picture={office}
+            alt='our office'
             content={
-                <div className='mobile-overview-header'>
-                    Learn about our office and our team
-                </div>
+                <Link className='mobile-overview-header' to='/office'>
+                    Learn about our office
+                </Link>
             }
+        />
+        
+        <OverlayBlock
+        picture={team}
+        alt='our team'
+        content={
+            <Link className='mobile-overview-header' to='/staff'>
+                Meet our team
+            </Link>
+        }
+        />
+        
+        <OverlayBlock
+        picture={forms}
+        alt='forms'
+        content={
+            <Link className='mobile-overview-header' to='/forms'>
+                Fill out these forms before your appointment
+            </Link>
+        }
         />
 
         <OverlayBlock

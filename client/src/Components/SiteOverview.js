@@ -1,8 +1,12 @@
 import '../Styles/SiteOverview.css';
+import { Link } from 'react-router-dom';
 import logo from '../Assets/uhfd-logo.svg';
 import cartoon from '../Assets/cartoon.jpg';
-import megan from '../Assets/megan.jpg'
-import team from '../Assets/team.jpg'
+import megan from '../Assets/megan.jpg';
+import team from '../Assets/team.jpg';
+import office from '../Assets/office.jpeg';
+import forms from '../Assets/forms.jpeg';
+
 
 function SiteOverview() {
   return (
@@ -26,10 +30,9 @@ function SiteOverview() {
         </div>
         <div className='overview-section'>
             <div className='overview-side'>
-                <div className='overview-headers'>
+                <Link className='overview-header' to='/services'>
                     Check out the services that we offer!
-                </div>
-                
+                </Link>
             </div>
             <div className='overview-side'>
                 <img className='overview-full-image' src={cartoon} alt='our services' />
@@ -37,13 +40,32 @@ function SiteOverview() {
         </div>
         <div className='overview-section'>
             <div className='overview-side'>
-                <img className='overview-full-image' src={team} alt='our team' />    
+                <img className='overview-full-image' src={office} alt='our office' />    
             </div>
             <div className='overview-side'>
-                <div className='overview-header'>
-                    Learn about our office and our team
-                </div>
-                
+                <Link className='overview-header' to='/office'>
+                    Learn more about our office
+                </Link>   
+            </div>
+        </div>
+        <div className='overview-section'>
+            <div className='overview-side'>
+                <Link className='overview-header' to='/staff'>
+                    Meet our team
+                </Link>
+            </div>
+            <div className='overview-side'>
+                <img className='overview-full-image' src={team} alt='our team' />    
+            </div>
+        </div>
+        <div className='overview-section'>
+            <div className='overview-side'>
+                <img className='overview-full-image' src={forms} alt='forms' />    
+            </div>
+            <div className='overview-side'>
+                <Link className='overview-header' to='/forms'>
+                    Fill out these forms before your appointment
+                </Link>
             </div>
         </div>
         <div className='overview-section'>
@@ -51,7 +73,6 @@ function SiteOverview() {
                 <div className='overview-header'>
                     Interested?     
                 </div>
-                
             </div>
             <div className='overview-side'>
                 <div id='overview-request-container'>
@@ -59,9 +80,9 @@ function SiteOverview() {
                         <img src={megan} alt='request appointment' />
                     </div>
                     <div id='overview-request-overlay'>
-                        <div>Call (623)878-4460</div>
+                        <a href='tel:6238784460'>Call (623)878-4460</a>
                         <div>or</div>
-                        <div id='overview-request-button'>Request an appointment</div>
+                        <Link id='overview-request-button' to='/request'>Request an appointment</Link>
                     </div>
                 </div>
             </div>

@@ -70,9 +70,9 @@ function Header(props) {
                             <Link onClick={closeMenu} className={props.active === 'forms' ? 'active-header-itm-mobile': 'header-itm-mobile'} to='/forms'>
                                 <div className='link-mobile'>Forms</div>
                             </Link>
-                            <a href='#' target='_blank' rel="noreferrer noopener" className='header-itm-mobile'>
+                            <Link onClick={closeMenu} className={props.active === 'request' ? 'active-header-itm-mobile': 'header-itm-mobile'} to='/request'>
                                 <div className='link-mobile'>Schedule</div>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -101,9 +101,9 @@ function Header(props) {
                         <Link className={props.active === 'forms' ? 'active-header-itm': 'header-itm'} to='/forms'>
                             <div className='link'>Forms</div>
                         </Link>
-                        <a href='#' target='_blank' rel="noreferrer noopener" className='header-itm'>
+                        <Link className={props.active === 'request' ? 'active-header-itm': 'header-itm'} to='/request'>
                             <div className='link'>Schedule</div>
-                        </a>
+                        </Link>
                     </div>
                     <div className='header-rank'>
                         <img src={topdentist} alt='phoenix top ranked dentist' />

@@ -1,10 +1,11 @@
 import '../Styles/App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './Home';
-import Office from './Office';
 import Services from './Services';
-import Forms from './Forms';
+import Office from './Office';
 import Staff from './Staff';
+import Forms from './Forms';
+import Request from './Request';
 import RouteChange from './RouteChange';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
                             <Route exact path='/services' element={< Services />}></Route>
                             <Route exact path='/staff' element={< Staff />}></Route>
                             <Route exact path='/forms' element={< Forms />}></Route>
+                            <Route exact path='/request' element={< Request />}></Route>
                         </Routes>
                     </RouteChange>
                 </Router>

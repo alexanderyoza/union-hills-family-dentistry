@@ -1,5 +1,6 @@
 import '../Styles/Home.css';
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import Header from './Header';
 import homepage from '../Assets/ocean.jpg';
 import SiteOverview from './SiteOverview';
@@ -35,13 +36,11 @@ function Home() {
             <div className='format-overlay'>
               <div className='overlay-container'>
                 <div className='landing-overlay-text'>
-                  Be the snack that smiles back
+                    Be the snack that smiles back
                 </div>
-                <div className='landing-overlay-request-container'>
-                  <div className='landing-overlay-request-text'>
+                <Link className='landing-overlay-request-container' to='/request'>
                     Request an appointment
-                  </div>
-                </div>
+                </Link>
               </div>
             </div>
           </div>
