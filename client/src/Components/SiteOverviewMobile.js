@@ -76,7 +76,7 @@ function SiteOverviewMobile() {
                 <div className='mobile-overview-request-overlay'>
                     <div>Call (623)878-4460</div>
                     <div>or</div>
-                    <div id='mobile-overview-request-button'>Request an appointment</div>
+                    <Link id='mobile-overview-request-button' to='/request'>Request an appointment</Link>
                 </div>
             }
         />

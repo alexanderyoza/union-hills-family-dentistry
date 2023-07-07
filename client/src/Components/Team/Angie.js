@@ -19,7 +19,7 @@ function Angie() {
                     is Certified in Radiology, Coronal Polishing, and CPR. Angela has worked
                     with Periodontists, Endodontists, Prostodontists and Oral Surgeons but
                     prefers General and Cosmetic Dentistry citing, “ I enjoy helping people
-                    regain the ability to smile”.Outside of work, Angela is happily married
+                    regain the ability to smile”. Outside of work, Angela is happily married
                     and has two adopted cats. She enjoys all art and crafts including making
                     greeting cards, sewing, painting and reading. Being a native of Arizona,
                     Angela has traveled all the over the Northern half of the state. Ask her

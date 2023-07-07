@@ -43,7 +43,7 @@
 
 .mobile-overview-request-overlay div {
     color: white;
-    font-size: 25px
+    font-size: 25px;
 }
 
 #mobile-welcome-text {
@@ -54,6 +54,9 @@
 
 #mobile-overview-request-button {
     background-color: #FFB800;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
     padding: 10px;
 }
 

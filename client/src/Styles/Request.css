@@ -1,0 +1,139 @@
+.request-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.request {
+    width: 90%;
+    max-width: 1500px;
+    font-size: min(max(16px, calc(12px + 1.5vw)), 50px);
+}
+
+.spacing {
+    margin-bottom: 30px;
+}
+
+.small-spacing {
+    margin-bottom: 20px;
+}
+
+.request-title {
+    font-size: 1.2em;
+    margin-top: 30px;
+}
+
+.request-description {
+    font-size: 0.8em;
+}
+
+.request-header {
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+
+.request-header span {
+    font-size: 0.7em;
+    margin-left: 10px;
+}
+
+.request-form {
+    width: 100%;
+}
+
+.request-form-section {
+    width: 100%;
+}
+
+.request-form-section select {
+    border: none;
+    border-bottom: 1px solid #0F62AF;
+    font-size: 0.8em;
+    color: #0F62AF;
+}
+
+.request-form-section input {
+    border: none;
+    border-bottom: 1px solid #0F62AF;
+    font-size: 0.8em;
+    color: #0F62AF;
+}
+
+.request-date-inputs {
+    width: 100%;
+}
+
+.request-date-inputs select {
+    width: 32%;
+    margin-right: 1%;
+    max-width: 300px;
+}
+
+.request-date-inputs select:focus,input:focus {
+    outline: none;
+}
+
+.request-time-inputs {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.request-time-inputs input {
+    margin-right: 1%;
+    width: 20%;
+    max-width: 100px;
+}
+
+.request-time-inputs div {
+    color: #0F62AF;
+    margin-right: 1%;
+}
+
+.request-time-inputs select{
+    margin-right: 1%;
+}
+
+
+
+.request-name-inputs,.request-contact-inputs {
+    width: 100%;
+}
+
+.request-name-inputs input,.request-contact-inputs input {
+    width: 40%;
+    margin-right: 1%;
+}
+
+.request-reason-inputs {
+    width: 100%;
+}
+
+.request-reason-inputs textarea {
+    width: 100%;
+    border-color: #0F62AF;
+    color: #0F62AF;
+    font-size: 0.8em;
+    resize: none;
+}
+
+.request-button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.request-button-container div {
+    width: 30%;
+    height: 60px;
+    color: white;
+    font-size: min(0.8em, 30px);
+    background-color: #0F62AF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+
+}
