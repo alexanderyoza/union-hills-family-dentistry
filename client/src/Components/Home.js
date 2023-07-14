@@ -36,7 +36,7 @@ function Home() {
             <div className='format-overlay'>
               <div className='overlay-container'>
                 <div className='landing-overlay-text'>
-                    Be the snack that smiles back
+                    Be the snack that smiles back (REMEMBER TO CHANGE IMAGES)
                 </div>
                 <Link className='landing-overlay-request-container' to='/request'>
                     Request an appointment

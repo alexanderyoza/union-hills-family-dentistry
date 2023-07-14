@@ -3,6 +3,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 100px;
 }
 
 .request {
@@ -46,18 +47,22 @@
     width: 100%;
 }
 
+.request-form-section-required {
+    width: 100%;
+}
+
 .request-form-section select {
     border: none;
     border-bottom: 1px solid #0F62AF;
     font-size: 0.8em;
-    color: #0F62AF;
+    color: #464646;
 }
 
 .request-form-section input {
     border: none;
     border-bottom: 1px solid #0F62AF;
     font-size: 0.8em;
-    color: #0F62AF;
+    color: #464646;
 }
 
 .request-date-inputs {
@@ -68,6 +73,7 @@
     width: 32%;
     margin-right: 1%;
     max-width: 300px;
+    color: #464646;
 }
 
 .request-date-inputs select:focus,input:focus {
@@ -84,15 +90,23 @@
     margin-right: 1%;
     width: 20%;
     max-width: 100px;
+    color: #464646;
+    font-size: 0.8em;
 }
 
 .request-time-inputs div {
-    color: #0F62AF;
     margin-right: 1%;
+    font-size: 0.8em;
 }
 
 .request-time-inputs select{
     margin-right: 1%;
+    color: #464646;
+    font-size: 0.9em;
+}
+
+.request-time-inputs select:focus{
+    outline: none;
 }
 
 
@@ -104,7 +118,23 @@
 .request-name-inputs input,.request-contact-inputs input {
     width: 40%;
     margin-right: 1%;
+    color: #464646;
 }
+
+.request-required-input {
+    border: none;
+    border-bottom: 1px solid #0F62AF;
+    font-size: 0.8em;
+    color: #464646;
+}
+
+.request-error-input {
+    border: none;
+    font-size: 0.8em;
+    color: #464646;
+    border-bottom: 1px solid #ff1900;
+}
+
 
 .request-reason-inputs {
     width: 100%;
@@ -112,8 +142,7 @@
 
 .request-reason-inputs textarea {
     width: 100%;
-    border-color: #0F62AF;
-    color: #0F62AF;
+    color: #464646;
     font-size: 0.8em;
     resize: none;
 }
@@ -135,5 +164,10 @@
     justify-content: center;
     align-items: center;
     border-radius: 30px;
+    cursor: pointer;
+}
 
+.request-notice{
+    width: 100%;
+    font-size: 1em;
 }
