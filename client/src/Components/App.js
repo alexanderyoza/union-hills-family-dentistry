@@ -7,6 +7,12 @@ import Staff from './Staff';
 import Forms from './Forms';
 import Request from './Request';
 import RouteChange from './RouteChange';
+import Veneers from './Services/Veneers';
+import Whitening from './Services/Whitening';
+import ImplantRestorations from './Services/ImplantRestorations';
+import DenturesSolution from './Services/DenturesSolution';
+import InvisibleBraces from './Services/InvisibleBraces';
+import SameDayCrowns from './Services/SameDayCrowns';
 
 function App() {
     return (
@@ -21,6 +27,12 @@ function App() {
                             <Route exact path='/staff' element={< Staff />}></Route>
                             <Route exact path='/forms' element={< Forms />}></Route>
                             <Route exact path='/request' element={< Request />}></Route>
+                            <Route exact path='/veneers' element={< Veneers />}></Route>
+                            <Route exact path='/whitening' element={< Whitening />}></Route>
+                            <Route exact path='/implantrestorations' element={< ImplantRestorations />}></Route>
+                            <Route exact path='/denturessolution' element={< DenturesSolution />}></Route>
+                            <Route exact path='/invisiblebraces' element={< InvisibleBraces />}></Route>
+                            <Route exact path='/samedaycrowns' element={< SameDayCrowns />}></Route>
                         </Routes>
                     </RouteChange>
                 </Router>

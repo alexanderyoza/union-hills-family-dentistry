@@ -4,7 +4,12 @@ import { useNavigate } from 'react-router-dom';
 import Header from './Header';
 import office from '../Assets/office.jpeg';
 import down from '../Assets/down.png';
-import service from '../Assets/service.jpeg';
+import CosmeticPorcelainVeneersImg from '../Assets/service.jpeg';
+import TeethWhiteningImg from '../Assets/service.jpeg';
+import ImplantRestorationsImg from '../Assets/service.jpeg';
+import TiredOfDenturesThatDontStayInImg from '../Assets/service.jpeg';
+import InvisibleBracesImg from '../Assets/service.jpeg';
+import SameDayCrownImg from '../Assets/service.jpeg';
 
 function Services() {
 
@@ -34,72 +39,81 @@ function Services() {
             </div>
             <div className='services-content'>
                 <div className='services-item'>
-                    <div className='services-item-inner-container' onClick={() => navigate('/')}>
+                    <div className='services-item-inner-container' onClick={() => navigate('/veneers')}>
                         <div className='services-item-image-container'>
-                            <img src={service} alt='bonding' />
+                            <img src={CosmeticPorcelainVeneersImg} alt='Cosmetic Porcelain Veneers' />
                         </div>   
-                        <div className='services-item-name' to='/services'>
-                            Bonding
+                        <div className='services-item-overlay'>
+                            <div className='services-item-name'>
+                                Cosmetic Porcelain Veneers
+                            </div>
+                            <div className='services-item-button'>Learn More</div>
                         </div>
                     </div>
                 </div>
                 <div className='services-item'>
-                    <div className='services-item-inner-container' onClick={() => navigate('/')}>
+                    <div className='services-item-inner-container' onClick={() => navigate('/whitening')}>
                         <div className='services-item-image-container'>
-                            <img src={service} alt='bonding' />
+                            <img src={TeethWhiteningImg} alt='Teeth Whitening' />
                         </div>   
-                        <div className='services-item-name' to='/services'>
-                            Bonding
+                        <div className='services-item-overlay'>
+                            <div className='services-item-name'>
+                                Teeth Whitening
+                            </div>    
+                            <div className='services-item-button'>Learn More</div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div className='services-item'>
+                    <div className='services-item-inner-container' onClick={() => navigate('/implantrestorations')}>
+                        <div className='services-item-image-container'>
+                            <img src={ImplantRestorationsImg} alt='Implant Restorations' />
+                        </div>   
+                        <div className='services-item-overlay'>
+                            <div className='services-item-name'>
+                                Implant Restorations
+                            </div>
+                            <div className='services-item-button'>Learn More</div>
                         </div>
                     </div>
                 </div>
                 <div className='services-item'>
-                    <div className='services-item-inner-container' onClick={() => navigate('/')}>
+                    <div className='services-item-inner-container' onClick={() => navigate('/denturessolution')}>
                         <div className='services-item-image-container'>
-                            <img src={service} alt='bonding' />
+                            <img src={TiredOfDenturesThatDontStayInImg} alt="Tired of Dentures that don't stay in?" />
                         </div>   
-                        <div className='services-item-name' to='/services'>
-                            Bonding
+                        <div className='services-item-overlay'>
+                            <div className='services-item-name'>
+                                Tired of Dentures that don't stay in?
+                            </div>
+                            <div className='services-item-button'>Learn More</div>
                         </div>
                     </div>
                 </div>
                 <div className='services-item'>
-                    <div className='services-item-inner-container' onClick={() => navigate('/')}>
+                    <div className='services-item-inner-container' onClick={() => navigate('/invisiblebraces')}>
                         <div className='services-item-image-container'>
-                            <img src={service} alt='bonding' />
+                            <img src={InvisibleBracesImg} alt='Invisible Braces' />
                         </div>   
-                        <div className='services-item-name' to='/services'>
-                            Bonding
+                        <div className='services-item-overlay'>
+                            <div className='services-item-name'>
+                                Invisible Braces
+                            </div>
+                            <div className='services-item-button'>Learn More</div>
                         </div>
                     </div>
                 </div>
                 <div className='services-item'>
-                    <div className='services-item-inner-container' onClick={() => navigate('/')}>
+                    <div className='services-item-inner-container' onClick={() => navigate('/samedaycrowns')}>
                         <div className='services-item-image-container'>
-                            <img src={service} alt='bonding' />
+                            <img src={SameDayCrownImg} alt='Same Day Crowns' />
                         </div>   
-                        <div className='services-item-name' to='/services'>
-                            Bonding
-                        </div>
-                    </div>
-                </div>
-                <div className='services-item'>
-                    <div className='services-item-inner-container' onClick={() => navigate('/')}>
-                        <div className='services-item-image-container'>
-                            <img src={service} alt='bonding' />
-                        </div>   
-                        <div className='services-item-name' to='/services'>
-                            Bonding
-                        </div>
-                    </div>
-                </div>
-                <div className='services-item'>
-                    <div className='services-item-inner-container' onClick={() => navigate('/')}>
-                        <div className='services-item-image-container'>
-                            <img src={service} alt='bonding' />
-                        </div>   
-                        <div className='services-item-name'>
-                            Bonding
+                        <div className='services-item-overlay'>
+                            <div className='services-item-name'>
+                                Same Day Crowns
+                            </div>
+                            <div className='services-item-button'>Learn More</div>
                         </div>
                     </div>
                 </div>

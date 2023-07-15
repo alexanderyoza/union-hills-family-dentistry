@@ -97,7 +97,7 @@
 
 @media (min-width: 701px) {
     .services-item {
-        width: calc(100% / 5);
+        width: calc(100% / 4);
         height: 50vh;
         display: flex;
         justify-content: center;
@@ -135,7 +135,7 @@
     z-index: -5;
 }
 
-.services-item-name {
+.services-item-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -144,7 +144,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    flex-direction: column;
     color: white;
-    text-decoration: underline;
 }
 
+.services-item-name {
+    width: 90%;
+    text-decoration: none;
+}
+
+.services-item-button {
+    width: 90%;
+    text-decoration: underline;
+}
