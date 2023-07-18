@@ -3,20 +3,18 @@ import React, { useEffect } from 'react'
 import '../Styles/Request.css';
 import Header from './Header';
 import { useState } from 'react';
-import {useNavigate} from 'react-router-dom';
 import axios from 'axios';
 
 function Request() {
 
-    const navigate = useNavigate();
-    const [month, setMonth] = useState();
-    const [day, setDay] = useState();
-    const [year, setYear] = useState();
-    const [hour, setHour] = useState();
-    const [minute, setMinute] = useState();
+    const [month, setMonth] = useState('0');
+    const [day, setDay] = useState('0');
+    const [year, setYear] = useState('0');
+    const [hour, setHour] = useState('');
+    const [minute, setMinute] = useState('');
     const [ampm, setAmpm] = useState('Am');
-    const [dayOfWeek, setDayOfWeek] = useState('');
-    const [timeOfDay, setTimeOfDay] = useState('');
+    const [dayOfWeek, setDayOfWeek] = useState('0');
+    const [timeOfDay, setTimeOfDay] = useState('0');
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
     const [email, setEmail] = useState('');
@@ -100,8 +98,7 @@ function Request() {
                 'reason': reason,
             };
             //post email info and await response
-            const loginResponse = await axios.post('URL', info);
-            console.log(loginResponse);
+            await axios.post('http://localhost:9000/requestappointment', info);
 
         } catch (err) {
             console.log(err);

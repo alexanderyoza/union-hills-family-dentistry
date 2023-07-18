@@ -4,12 +4,12 @@ import { useNavigate } from 'react-router-dom';
 import Header from './Header';
 import office from '../Assets/office.jpeg';
 import down from '../Assets/down.png';
-import CosmeticPorcelainVeneersImg from '../Assets/service.jpeg';
-import TeethWhiteningImg from '../Assets/service.jpeg';
-import ImplantRestorationsImg from '../Assets/service.jpeg';
-import TiredOfDenturesThatDontStayInImg from '../Assets/service.jpeg';
-import InvisibleBracesImg from '../Assets/service.jpeg';
-import SameDayCrownImg from '../Assets/service.jpeg';
+import CosmeticPorcelainVeneersImg from '../Assets/ServiceImages/placeholder.png';
+import TeethWhiteningImg from '../Assets/ServiceImages/WhiteningImg.jpeg';
+import ImplantRestorationsImg from '../Assets/ServiceImages/ImplantImg.jpeg';
+import TiredOfDenturesThatDontStayInImg from '../Assets/ServiceImages/DenturesComplete.jpeg';
+import InvisibleBracesImg from '../Assets/ServiceImages/InvisibleBracesImg.jpeg';
+import SameDayCrownImg from '../Assets/ServiceImages/placeholder.png';
 
 function Services() {
 
@@ -79,19 +79,6 @@ function Services() {
                     </div>
                 </div>
                 <div className='services-item'>
-                    <div className='services-item-inner-container' onClick={() => navigate('/denturessolution')}>
-                        <div className='services-item-image-container'>
-                            <img src={TiredOfDenturesThatDontStayInImg} alt="Tired of Dentures that don't stay in?" />
-                        </div>   
-                        <div className='services-item-overlay'>
-                            <div className='services-item-name'>
-                                Tired of Dentures that don't stay in?
-                            </div>
-                            <div className='services-item-button'>Learn More</div>
-                        </div>
-                    </div>
-                </div>
-                <div className='services-item'>
                     <div className='services-item-inner-container' onClick={() => navigate('/invisiblebraces')}>
                         <div className='services-item-image-container'>
                             <img src={InvisibleBracesImg} alt='Invisible Braces' />
@@ -117,7 +104,19 @@ function Services() {
                         </div>
                     </div>
                 </div>
-
+                <div className='services-item'>
+                    <div className='services-item-inner-container' onClick={() => navigate('/denturessolution')}>
+                        <div className='services-item-image-container'>
+                            <img src={TiredOfDenturesThatDontStayInImg} alt="Tired of Dentures that don't stay in?" />
+                        </div>   
+                        <div className='services-item-overlay'>
+                            <div className='services-item-name'>
+                                Tired of Dentures that don't stay in?
+                            </div>
+                            <div className='services-item-button'>Learn More</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     )
