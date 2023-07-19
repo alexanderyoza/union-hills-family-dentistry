@@ -19,7 +19,7 @@ app.use(cors({ origin: true, credentials: true }));
 // app
 app.post('/requestappointment',
     async (req, res) => {
-        const { month, day, year, hour, minute, ampm, dayOfWeek, timeOfDay, firstName, lastName, email, phone, reason } = req.body;
+        let { month, day, year, hour, minute, ampm, dayOfWeek, timeOfDay, firstName, lastName, email, phone, reason } = req.body;
         try {
             console.log(req.body);
             const transporter = nodemailer.createTransport({
@@ -30,11 +30,17 @@ app.post('/requestappointment',
                 },
             });
 
+            if (minute.length == 1) {
+                minute = '0' + minute;
+            }
+
+
+            
             
 
             await transporter.sendMail({
                 from: process.env.EMAIL_USER,
-                to: 'uhfdentistry@gmail.com',
+                to: 'yozadds@gmail.com',
                 subject: `Incoming Schedule Request - ${firstName} ${lastName}`,
                 text: 
                 `

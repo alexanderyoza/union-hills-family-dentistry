@@ -2,7 +2,7 @@ import '../Styles/Home.css';
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Header from './Header';
-import homepage from '../Assets/ocean.jpg';
+import homepage from '../Assets/ocean.jpeg';
 import SiteOverview from './SiteOverview';
 import SiteOverviewMobile from './SiteOverviewMobile';
 

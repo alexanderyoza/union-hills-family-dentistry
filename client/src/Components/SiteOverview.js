@@ -1,7 +1,7 @@
 import '../Styles/SiteOverview.css';
 import { Link } from 'react-router-dom';
 import logo from '../Assets/uhfd-logo.svg';
-import cartoon from '../Assets/cartoon.jpg';
+import service from '../Assets/service.jpg';
 import megan from '../Assets/megan.jpg';
 import team from '../Assets/team.jpg';
 import office from '../Assets/office.jpeg';
@@ -35,7 +35,7 @@ function SiteOverview() {
                 </Link>
             </div>
             <div className='overview-side'>
-                <img className='overview-full-image' src={cartoon} alt='our services' />
+                <img className='overview-full-image' src={service} alt='our services' />
             </div>
         </div>
         <div className='overview-section'>

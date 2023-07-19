@@ -52,6 +52,7 @@
 }
 
 .request-form-section select {
+    outline: none;
     border: none;
     border-bottom: 1px solid #0F62AF;
     font-size: 0.8em;
@@ -116,7 +117,8 @@
 }
 
 .request-name-inputs input,.request-contact-inputs input {
-    width: 40%;
+    width: 49%;
+    max-width: 500px;
     margin-right: 1%;
     color: #464646;
 }

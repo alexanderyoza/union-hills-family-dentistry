@@ -75,7 +75,19 @@ function Request() {
 
         for (let v of [firstNameFilled, lastNameFilled, emailFilled, phoneFilled]) {
             if (!v) {
-                alert('Submit not successful. Please ensure all boxes required boxes are correctly completed.')
+                alert('Submit not successful. Please ensure all required boxes are correctly completed.')
+                return;
+            }
+        }
+
+        if (!email.includes('@')) {
+            alert('Submit not successful. Please ensure that your email is correct.')
+            return;
+        }
+
+        if (phone.length !== 10 && phone.length !== 11) {
+            if (!phone.includes('(') && !phone.includes(')') && !phone.includes('-')&& !phone.includes('+')) {
+                alert('Submit not successful. Please ensure that your phone number is correct.')
                 return;
             }
         }
@@ -224,9 +236,9 @@ function Request() {
                                 Name <span>(required)</span>
                             </div>
                             <div className='request-name-inputs'>
-                                <input placeholder='First Name (required)' className={firstNameFilled ?  'request-required-input' : 'request-error-input'} type="text" id="firstname" value={firstName}
+                                <input placeholder='First Name' className={firstNameFilled ?  'request-required-input' : 'request-error-input'} type="text" id="firstname" value={firstName}
                                     onChange={(event) => setFirstName(event.target.value)}></input>
-                                <input placeholder='Last Name (required)' className={lastNameFilled ?  'request-required-input' : 'request-error-input'} type="text" id="lastname" value={lastName}
+                                <input placeholder='Last Name' className={lastNameFilled ?  'request-required-input' : 'request-error-input'} type="text" id="lastname" value={lastName}
                                     onChange={(event) => setLastName(event.target.value)}></input>
                             </div>
                         </div>
@@ -235,9 +247,9 @@ function Request() {
                                 Contact Information <span>(required)</span>
                             </div>
                             <div className='request-contact-inputs'>
-                                <input placeholder='Email (required)' className={emailFilled ?  'request-required-input' : 'request-error-input'} type="text" id="email" value={email}
+                                <input placeholder='Email' className={emailFilled ?  'request-required-input' : 'request-error-input'} type="text" id="email" value={email}
                                     onChange={(event) => setEmail(event.target.value)}></input>
-                                <input placeholder='Phone Number (required)' className={phoneFilled ?  'request-required-input' : 'request-error-input'} type="text" id="phone" value={phone}
+                                <input placeholder='Phone Number' className={phoneFilled ?  'request-required-input' : 'request-error-input'} type="text" id="phone" value={phone}
                                     onChange={(event) => setPhone(event.target.value)}></input>
                             </div>
                         </div>

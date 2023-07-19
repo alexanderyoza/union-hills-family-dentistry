@@ -9,8 +9,8 @@ function DenturesSolution() {
             <Header active='services'/>
             <div className='services-description'>
                 <img src={DenturesImg} alt='Dentures' />
-                <h1>Dentures</h1>
                 <div>
+                    We have a solution for you!
                     All-on-4 dentures offer a transformative dental restoration
                     that combines the benefits of dental implants and fixed dentures.
                     By strategically placing four dental implants in your jawbone, we

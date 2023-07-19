@@ -2,7 +2,7 @@ import '../Styles/SiteOverviewMobile.css';
 import { Link } from 'react-router-dom';
 import OverlayBlock from './OverlayBlock';
 import wave from '../Assets/wave.jpg';
-import cartoon from '../Assets/cartoon.jpg';
+import service from '../Assets/service.jpg';
 import megan from '../Assets/megan.jpg';
 import team from '../Assets/team.jpg';
 import office from '../Assets/officefront.jpg';
@@ -29,7 +29,7 @@ function SiteOverviewMobile() {
         />
 
         <OverlayBlock
-            picture={cartoon}
+            picture={service}
             alt='our services'
             content={
                 <Link className='mobile-overview-header' to='/services'>
