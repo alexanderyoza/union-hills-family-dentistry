@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../../Styles/ServiceDescription.css';
 import Header from '../Header';
-import VeneersImg from '../../Assets/ServiceImages/placeholder.png';
+import VeneersImg from '../../Assets/ServiceImages/Veneer-Procedure.jpeg';
 
 function Veneers() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);  
+    }, []);
+
     return (
         <div className='services-description-container'>
             <Header active='services'/>

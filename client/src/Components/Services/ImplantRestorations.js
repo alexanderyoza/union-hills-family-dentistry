@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../../Styles/ServiceDescription.css';
 import Header from '../Header';
 import ImplantImg from '../../Assets/ServiceImages/ImplantImg.jpeg';
 
 function ImplantRestorations() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);  
+    }, []);
+
     return (
         <div className='services-description-container'>
             <Header active='services'/>

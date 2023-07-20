@@ -29,6 +29,10 @@ function Request() {
     const date = new Date();
 
     useEffect(() => {
+        window.scrollTo(0, 0);  
+    }, []);
+
+    useEffect(() => {
 
         if (!firstName) {
             setFirstNameFilled(false);

@@ -16,7 +16,9 @@ function Header(props) {
             const narrow = window.innerWidth <= 900;
             setIsMobile(narrow);
         };
-        
+
+        window.scrollTo(0, 0);  
+    
         checkMobile();
         window.addEventListener('resize', checkMobile);
         return () => {

@@ -4,12 +4,12 @@ import { useNavigate } from 'react-router-dom';
 import Header from './Header';
 import office from '../Assets/office.jpeg';
 import down from '../Assets/down.png';
-import CosmeticPorcelainVeneersImg from '../Assets/ServiceImages/placeholder.png';
+import CosmeticPorcelainVeneersImg from '../Assets/ServiceImages/Veneer.jpeg';
 import TeethWhiteningImg from '../Assets/ServiceImages/WhiteningImg.jpeg';
 import ImplantRestorationsImg from '../Assets/ServiceImages/ImplantImg.jpeg';
 import TiredOfDenturesThatDontStayInImg from '../Assets/ServiceImages/DenturesComplete.jpeg';
 import InvisibleBracesImg from '../Assets/ServiceImages/InvisibleBracesImg.jpeg';
-import SameDayCrownImg from '../Assets/ServiceImages/placeholder.png';
+import SameDayCrownImg from '../Assets/ServiceImages/Crown.jpeg';
 
 function Services() {
 

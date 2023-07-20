@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../../Styles/ServiceDescription.css';
 import Header from '../Header';
-import SameDayCrownsImg from '../../Assets/ServiceImages/placeholder.png';
+import SameDayCrownsImg from '../../Assets/ServiceImages/Crown.jpeg';
 
 function SameDayCrowns() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);  
+    }, []);
+
     return (
         <div className='services-description-container'>
             <Header active='services'/>

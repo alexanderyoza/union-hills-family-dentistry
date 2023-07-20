@@ -51,6 +51,10 @@
     object-fit: cover;
 }
 
+#overview-interested:hover {
+    color: black;
+}
+
 #overview-request-container {
     position: relative;
     width: 100%;
