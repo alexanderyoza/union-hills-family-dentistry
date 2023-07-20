@@ -18,7 +18,7 @@ function App() {
     return (
         <div className='App-Container'>
             <div className='App'>
-                <Router basename='https://alexanderyoza.github.io/sample-uhfd'>
+                <Router>
                     <RouteChange>
                         <Routes>
                             <Route exact path='/' element={< Home />}></Route>
