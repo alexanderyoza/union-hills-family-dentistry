@@ -38,10 +38,6 @@ function Staff() {
                         <div className='dentist-blurb'>
                             <div>
                                 Dr. Ethan J. Yoza DDS, FAGD was born and raised in Honolulu, Hawaii.
-                                He has been happily married to his wife, Kymberly, also from Hawaii, for 19 years.
-                                Their two children, Alex and Lexi, keep the whole family busy with sports.
-                            </div>
-                            <div>
                                 After serving five years in the United States Air Force,
                                 Dr. Yoza decided to build his dental office and make Arizona his new home.
                                 Dr. Yoza is honored to be able to provide high quality, gentle, and compassionate

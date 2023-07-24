@@ -13,8 +13,7 @@ function Blanca() {
                     Blanca
                 </div>
                 <div className='team-blurb'>
-                    Blanca is originally from California and moved to beautiful Arizona 4 years ago.
-                    She has worked in the dental field since 2002 as a front office associate and
+                    Blanca has worked in the dental field since 2002 as a front office associate and
                     treatment coordinator. Blanca began working with Dr. Yoza in 2009 and enjoys
                     the great family atmosphere as well as the team’s high standards in patient care.
                     She believes patient trust is very important. She likes to celebrate when a patient

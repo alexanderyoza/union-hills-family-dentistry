@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/union-hills-family-dentistry/static/css/main.67f373ef.css",
-    "main.js": "/union-hills-family-dentistry/static/js/main.dae15615.js",
+    "main.js": "/union-hills-family-dentistry/static/js/main.58d52abf.js",
     "static/media/ocean.png": "/union-hills-family-dentistry/static/media/ocean.9ef7c7e0b72bc08b841b.png",
     "static/media/team.jpg": "/union-hills-family-dentistry/static/media/team.f9f86b0b55aba26b5bf3.jpg",
     "static/media/officefront.jpg": "/union-hills-family-dentistry/static/media/officefront.b64cf9c53e766c63b979.jpg",
@@ -35,10 +35,10 @@
     "static/media/down.png": "/union-hills-family-dentistry/static/media/down.ec55ea8136f0b51791a3.png",
     "index.html": "/union-hills-family-dentistry/index.html",
     "main.67f373ef.css.map": "/union-hills-family-dentistry/static/css/main.67f373ef.css.map",
-    "main.dae15615.js.map": "/union-hills-family-dentistry/static/js/main.dae15615.js.map"
+    "main.58d52abf.js.map": "/union-hills-family-dentistry/static/js/main.58d52abf.js.map"
   },
   "entrypoints": [
     "static/css/main.67f373ef.css",
-    "static/js/main.dae15615.js"
+    "static/js/main.58d52abf.js"
   ]
 }
