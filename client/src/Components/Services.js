@@ -2,6 +2,7 @@ import '../Styles/Services.css';
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Header from './Header';
+import Footer from './Footer';
 import office from '../Assets/office.jpeg';
 import down from '../Assets/down.png';
 import CosmeticPorcelainVeneersImg from '../Assets/ServiceImages/Veneer.jpeg';
@@ -118,6 +119,7 @@ function Services() {
                     </div>
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }

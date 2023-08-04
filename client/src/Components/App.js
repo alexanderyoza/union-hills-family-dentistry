@@ -6,6 +6,8 @@ import Office from './Office';
 import Staff from './Staff';
 import Forms from './Forms';
 import Request from './Request';
+import Disclaimer from './Disclaimer';
+import PatientPrivacy from './PatientPrivacy';
 import RouteChange from './RouteChange';
 import Veneers from './Services/Veneers';
 import Whitening from './Services/Whitening';
@@ -27,6 +29,8 @@ function App() {
                             <Route exact path='/staff' element={< Staff />}></Route>
                             <Route exact path='/forms' element={< Forms />}></Route>
                             <Route exact path='/request' element={< Request />}></Route>
+                            <Route exact path='/disclaimer' element={< Disclaimer />}></Route>
+                            <Route exact path='/patientprivacy' element={< PatientPrivacy />}></Route>
                             <Route exact path='/veneers' element={< Veneers />}></Route>
                             <Route exact path='/whitening' element={< Whitening />}></Route>
                             <Route exact path='/implantrestorations' element={< ImplantRestorations />}></Route>

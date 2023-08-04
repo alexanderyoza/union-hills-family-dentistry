@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import '../../Styles/ServiceDescription.css';
 import Header from '../Header';
+import Footer from '../Footer';
 import VeneersImg from '../../Assets/ServiceImages/Veneer-Procedure.jpeg';
 
 function Veneers() {
@@ -49,6 +50,7 @@ function Veneers() {
                 </div>
 
             </div>
+            <Footer />
         </div>
     )
 }

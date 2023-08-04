@@ -5,6 +5,7 @@ import Header from './Header';
 import homepage from '../Assets/ocean.png';
 import SiteOverview from './SiteOverview';
 import SiteOverviewMobile from './SiteOverviewMobile';
+import Footer from './Footer';
 
 function Home() {
 
@@ -36,7 +37,7 @@ function Home() {
                         <div className='format-overlay'>
                             <div className='overlay-container'>
                                 <div className='landing-overlay-text'>
-                                    Be the snack that smiles back
+                                    Unleashing Aloha: Transforming Your Dental Care Experience
                                 </div>
                                 <Link className='landing-overlay-request-container' to='/request'>
                                     Request an appointment
@@ -46,7 +47,8 @@ function Home() {
                     </div>
                 </div>
             </div>
-            {isMobile ? <SiteOverviewMobile/> : <SiteOverview/>}
+            {isMobile ? <SiteOverviewMobile /> : <SiteOverview />}
+            <Footer/>
         </div>
     )
 }

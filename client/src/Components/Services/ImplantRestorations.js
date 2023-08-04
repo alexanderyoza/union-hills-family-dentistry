@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import '../../Styles/ServiceDescription.css';
 import Header from '../Header';
+import Footer from '../Footer';
 import ImplantImg from '../../Assets/ServiceImages/ImplantImg.jpeg';
 
 function ImplantRestorations() {
@@ -42,7 +43,7 @@ function ImplantRestorations() {
                     precise implant placement and expertly crafted restorations.
                 </div>
             </div>
-
+            <Footer />
         </div>
     )
 }

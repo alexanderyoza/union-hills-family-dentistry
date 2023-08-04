@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import '../../Styles/ServiceDescription.css';
 import Header from '../Header';
+import Footer from '../Footer';
 import SameDayCrownsImg from '../../Assets/ServiceImages/Crown.jpeg';
 
 function SameDayCrowns() {
@@ -61,6 +62,7 @@ function SameDayCrowns() {
                     compromise the adhesion of the crown, or even damage the crown.
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }

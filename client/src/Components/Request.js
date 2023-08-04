@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react'
 import '../Styles/Request.css';
 import Header from './Header';
+import Footer from './Footer';
 import { useState } from 'react';
 import axios from 'axios';
 
@@ -142,6 +143,7 @@ function Request() {
                             please call at (623)878-4460.
                         </div>
                     </div>
+                    <Footer />
                 </div >
             )
         }
@@ -278,6 +280,7 @@ function Request() {
                         </div>
                     </div>
                 </div>
+                <Footer />
             </div >
         )
     }

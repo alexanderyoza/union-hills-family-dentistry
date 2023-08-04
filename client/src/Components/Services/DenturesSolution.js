@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import '../../Styles/ServiceDescription.css';
 import Header from '../Header';
+import Footer from '../Footer';
 import DenturesImg from '../../Assets/ServiceImages/Dentures.jpeg';
 
 function DenturesSolution() {
@@ -52,6 +53,7 @@ function DenturesSolution() {
                     confident and beautiful smile once again.
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }

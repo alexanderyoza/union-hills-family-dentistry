@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import '../../Styles/ServiceDescription.css';
 import Header from '../Header';
+import Footer from '../Footer';
 import WhiteningImg from '../../Assets/ServiceImages/WhiteningImg.jpeg';
 
 function Whitening() {
@@ -39,6 +40,7 @@ function Whitening() {
                     teeth whitening services.
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }

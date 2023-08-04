@@ -1,5 +1,6 @@
 import '../Styles/Office.css';
 import Header from './Header';
+import Footer from './Footer';
 import { useState, useEffect } from 'react';
 import officefront from '../Assets/officefront.jpg';
 
@@ -91,6 +92,7 @@ function Office() {
                     </div>
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }

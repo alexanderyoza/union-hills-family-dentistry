@@ -3,6 +3,7 @@ import '../Styles/Staff.css';
 import { useEffect } from 'react';
 import teamnarrow from '../Assets/team-narrow.jpg';
 import Header from './Header';
+import Footer from './Footer';
 import ethan from '../Assets/Staff/ethan.jpeg';
 import Blanca from './Team/Blanca';
 import Angie from './Team/Angie';
@@ -154,6 +155,7 @@ function Staff() {
                 <Desiree />
                 <Shelby />
             </div>
+            <Footer />
         </div>
     )
 }

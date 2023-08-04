@@ -89,22 +89,22 @@ function Header(props) {
                     </div>
                     <div className='header-menu'>
                         <Link className={props.active === 'home' ? 'active-header-itm': 'header-itm'} to='/'>
-                            <div className='link'>Home</div>
+                            <div className='header-link'>Home</div>
                         </Link>
                         <Link className={props.active === 'services' ? 'active-header-itm': 'header-itm'} to='/services'>
-                            <div className='link'>Services</div>
+                            <div className='header-link'>Services</div>
                         </Link>
                         <Link className={props.active === 'office' ? 'active-header-itm': 'header-itm'} to='/office'>
-                            <div className='link'>Office</div>
+                            <div className='header-link'>Office</div>
                         </Link>
                         <Link className={props.active === 'staff' ? 'active-header-itm': 'header-itm'} to='/staff'>
-                            <div className='link'>Staff</div>
+                            <div className='header-link'>Staff</div>
                         </Link>
                         <Link className={props.active === 'forms' ? 'active-header-itm': 'header-itm'} to='/forms'>
-                            <div className='link'>Forms</div>
+                            <div className='header-link'>Forms</div>
                         </Link>
                         <Link className={props.active === 'request' ? 'active-header-itm': 'header-itm'} to='/request'>
-                            <div className='link'>Schedule</div>
+                            <div className='header-link'>Schedule</div>
                         </Link>
                     </div>
                     <div className='header-rank'>

@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import '../../Styles/ServiceDescription.css';
 import Header from '../Header';
+import Footer from '../Footer';
 import InvisibleBracesImg from '../../Assets/ServiceImages/InvisibleBracesImg.jpeg';
 
 function InvisibleBraces() {
@@ -34,6 +35,7 @@ function InvisibleBraces() {
                     progressing as planned and allow for any necessary adjustments.
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }

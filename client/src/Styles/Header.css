@@ -66,12 +66,12 @@
     color: inherit;
 }
 
-.header-itm:hover .link{
+.header-itm:hover .header-link{
     transition-duration: .5s;
     color: #84e4f0;
 }
 
-.link{
+.header-link{
     width: 100%;
     color: inherit;
     text-decoration: none;
