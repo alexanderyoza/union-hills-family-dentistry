@@ -69,11 +69,11 @@ function Office() {
                                 </div>
                                 <div className='office-day'>
                                     <div>Wednesday: </div>
-                                    <div>8AM - 6PM</div>
+                                    <div>8AM - 5PM</div>
                                 </div>
                                 <div className='office-day'>
                                     <div>Thursday: </div>
-                                    <div>8AM - 6PM</div>
+                                    <div>8AM - 5PM</div>
                                 </div>
                             </div>
                         </div>

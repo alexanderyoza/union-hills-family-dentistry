@@ -50,6 +50,7 @@
     .team {
         position: relative;
         width: 100%;
+        margin-bottom: 30px;
         min-height: min(86vh, calc(100vh - 100px));
         display: flex;
         justify-content: space-between;

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/union-hills-family-dentistry/static/css/main.689d10eb.css",
-    "main.js": "/union-hills-family-dentistry/static/js/main.b9d94579.js",
+    "main.css": "/union-hills-family-dentistry/static/css/main.38da71ee.css",
+    "main.js": "/union-hills-family-dentistry/static/js/main.4361e570.js",
     "static/media/ocean.png": "/union-hills-family-dentistry/static/media/ocean.9ef7c7e0b72bc08b841b.png",
     "static/media/team.jpg": "/union-hills-family-dentistry/static/media/team.f9f86b0b55aba26b5bf3.jpg",
     "static/media/officefront.jpg": "/union-hills-family-dentistry/static/media/officefront.b64cf9c53e766c63b979.jpg",
@@ -11,7 +11,6 @@
     "static/media/InvisibleBracesImg.jpeg": "/union-hills-family-dentistry/static/media/InvisibleBracesImg.d7c17868e6d0b95ba11d.jpeg",
     "static/media/office.jpeg": "/union-hills-family-dentistry/static/media/office.5e63dd29e7d23d86d2a5.jpeg",
     "static/media/Veneer.jpeg": "/union-hills-family-dentistry/static/media/Veneer.5b998d237b52ae6b0586.jpeg",
-    "static/media/megan.jpg": "/union-hills-family-dentistry/static/media/megan.47b0bbfcfb79c39cbfb6.jpg",
     "static/media/Crown.jpeg": "/union-hills-family-dentistry/static/media/Crown.8e443196975fe45aafe3.jpeg",
     "static/media/Dentures.jpeg": "/union-hills-family-dentistry/static/media/Dentures.cb421a9f84fe88683c59.jpeg",
     "static/media/service.jpg": "/union-hills-family-dentistry/static/media/service.a0b7b6015cb0095431c1.jpg",
@@ -25,7 +24,6 @@
     "static/media/Karla-Regular.ttf": "/union-hills-family-dentistry/static/media/Karla-Regular.62286aad3fe194b20ef0.ttf",
     "static/media/forms.jpeg": "/union-hills-family-dentistry/static/media/forms.a3254f15a379bdd5e4b0.jpeg",
     "static/media/uhfd-logo.svg": "/union-hills-family-dentistry/static/media/uhfd-logo.7031656ec4d9c56054ad3eed2fe9a180.svg",
-    "static/media/desiree.jpeg": "/union-hills-family-dentistry/static/media/desiree.b3395731a3e6e2b01e4f.jpeg",
     "static/media/ethan.jpeg": "/union-hills-family-dentistry/static/media/ethan.73209ce69f2f0c70a155.jpeg",
     "static/media/TopDentistsLogo.png": "/union-hills-family-dentistry/static/media/TopDentistsLogo.860b509bdd6f8d8aa1df.png",
     "static/media/WhiteningImg.jpeg": "/union-hills-family-dentistry/static/media/WhiteningImg.c2e5c5aac7ca69db0b21.jpeg",
@@ -34,11 +32,11 @@
     "static/media/kirsten.jpeg": "/union-hills-family-dentistry/static/media/kirsten.36d8880cd1da076fb9d3.jpeg",
     "static/media/down.png": "/union-hills-family-dentistry/static/media/down.ec55ea8136f0b51791a3.png",
     "index.html": "/union-hills-family-dentistry/index.html",
-    "main.689d10eb.css.map": "/union-hills-family-dentistry/static/css/main.689d10eb.css.map",
-    "main.b9d94579.js.map": "/union-hills-family-dentistry/static/js/main.b9d94579.js.map"
+    "main.38da71ee.css.map": "/union-hills-family-dentistry/static/css/main.38da71ee.css.map",
+    "main.4361e570.js.map": "/union-hills-family-dentistry/static/js/main.4361e570.js.map"
   },
   "entrypoints": [
-    "static/css/main.689d10eb.css",
-    "static/js/main.b9d94579.js"
+    "static/css/main.38da71ee.css",
+    "static/js/main.4361e570.js"
   ]
 }
