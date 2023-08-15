@@ -6,8 +6,34 @@ import homepage from '../Assets/ocean.png';
 import SiteOverview from './SiteOverview';
 import SiteOverviewMobile from './SiteOverviewMobile';
 import Footer from './Footer';
+import service from '../Assets/service.jpg';
+import team from '../Assets/team.jpg';
+import office from '../Assets/office.jpeg';
+import forms from '../Assets/forms.jpeg';
 
 function Home() {
+
+    const overviewcontent = {
+        'welcome': `Welcome!
+                    Union Hills Family Dentistry has been working with patients 
+                    to provide the best cosmetic dentistry care for patients in the 
+                    Greater Phoenix area. Dr. Yoza’s experience in cosmetic dentistry is coupled 
+                    with a genuine concern for his patients. Our entire staff is dedicated to your 
+                    comfort and prompt attention.  We also work closely with the 
+                    top dental specialists in the valley.  
+                    Our goal is to change your life by giving you the smile and function you deserve.`,
+        'services': 'Services we provide',
+        'office': 'Learn more about our office',
+        'team': 'Meet our team',
+        'forms': 'Print Patient Forms'
+    }
+
+    const overviewimages = {
+        'services': service,
+        'office': office,
+        'team': team,
+        'forms': forms
+    }
 
     const [isMobile, setIsMobile] = useState(false);
 
@@ -47,7 +73,7 @@ function Home() {
                     </div>
                 </div>
             </div>
-            {isMobile ? <SiteOverviewMobile /> : <SiteOverview />}
+            {isMobile ? <SiteOverviewMobile content={overviewcontent} images={overviewimages} /> : <SiteOverview content={overviewcontent} images={overviewimages} />}
             <Footer/>
         </div>
     )

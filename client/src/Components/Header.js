@@ -73,7 +73,7 @@ function Header(props) {
                                 <div className='link-mobile'>Forms</div>
                             </Link>
                             <Link onClick={closeMenu} className={props.active === 'request' ? 'active-header-itm-mobile': 'header-itm-mobile'} to='/request'>
-                                <div className='link-mobile'>Schedule</div>
+                                <div className='link-mobile'>Request Appointment</div>
                             </Link>
                         </div>
                     </div>
@@ -104,7 +104,7 @@ function Header(props) {
                             <div className='header-link'>Forms</div>
                         </Link>
                         <Link className={props.active === 'request' ? 'active-header-itm': 'header-itm'} to='/request'>
-                            <div className='header-link'>Schedule</div>
+                            <div className='header-link'>Request Appointment</div>
                         </Link>
                     </div>
                     <div className='header-rank'>

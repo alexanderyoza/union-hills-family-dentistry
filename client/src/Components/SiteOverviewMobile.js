@@ -2,13 +2,8 @@ import '../Styles/SiteOverviewMobile.css';
 import { Link } from 'react-router-dom';
 import OverlayBlock from './OverlayBlock';
 import wave from '../Assets/wave.jpg';
-import service from '../Assets/service.jpg';
-import megan from '../Assets/megan.jpg';
-import team from '../Assets/team.jpg';
-import office from '../Assets/officefront.jpg';
-import forms from '../Assets/forms.jpeg';
 
-function SiteOverviewMobile() {
+function SiteOverviewMobile(props) {
   return (
     <div className='site-overview-mobile'>
         <OverlayBlock 
@@ -16,69 +11,49 @@ function SiteOverviewMobile() {
             alt='union hills family dentistry logo' 
             content={
                 <div id='mobile-welcome-text'>
-                    Welcome!
-                    Union Hills Family Dentistry has been working with patients 
-                    to provide the best cosmetic dentistry care for patients in the 
-                    Glendale, AZ area. Dr. Yoza’s experience in cosmetic dentistry is coupled 
-                    with genuine concern for his patients. All of our staff is dedicated to your 
-                    comfort and prompt attention.  We also work closely with the 
-                    top dental specialists in the valley.  
-                    Our goal is to change your life by giving you the smile and function you deserve.
+                    {props.content['welcome']}
                 </div>
             }
         />
 
         <OverlayBlock
-            picture={service}
+            picture={props.images['services']}
             alt='our services'
             content={
                 <Link className='mobile-overview-header' to='/services'>
-                    Learn more about the services we offer
+                    {props.content['services']}
                 </Link>
             }
         />
         
         <OverlayBlock
-            picture={office}
+            picture={props.images['office']}
             alt='our office'
             content={
                 <Link className='mobile-overview-header' to='/office'>
-                    Learn about our office
+                    {props.content['office']}
                 </Link>
             }
         />
         
         <OverlayBlock
-        picture={team}
+        picture={props.images['team']}
         alt='our team'
         content={
             <Link className='mobile-overview-header' to='/staff'>
-                Meet our team
+                {props.content['team']}
             </Link>
         }
         />
         
         <OverlayBlock
-        picture={forms}
+        picture={props.images['forms']}
         alt='forms'
         content={
             <Link className='mobile-overview-header' to='/forms'>
-                Fill out these forms before your appointment
+                {props.content['forms']}
             </Link>
         }
-        />
-
-        <OverlayBlock
-
-            picture={megan}
-            alt='request appointment'
-            content={
-                <div className='mobile-overview-request-overlay'>
-                    <div>Call (623)878-4460</div>
-                    <div>or</div>
-                    <Link id='mobile-overview-request-button' to='/request'>Request an appointment</Link>
-                </div>
-            }
         />
     </div>
 
