@@ -8,6 +8,7 @@ jest.mock('axios');
 
 describe('<Request />', () => {
     test('renders without crashing', () => {
+        window.scrollTo = jest.fn();
 
         render(
             <MemoryRouter>
@@ -17,6 +18,7 @@ describe('<Request />', () => {
     });
 
     test('alerts the user if required fields are missing', async () => {
+        window.scrollTo = jest.fn();
         window.alert = jest.fn();
 
         render(
@@ -33,6 +35,8 @@ describe('<Request />', () => {
     });
 
     test('displays a success message after form submission', async () => {
+        window.scrollTo = jest.fn();
+        
         render(
             <MemoryRouter>
                 <Request />

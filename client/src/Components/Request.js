@@ -119,6 +119,7 @@ function Request() {
 
         } catch (err) {
             console.log(err);
+            alert('Submit not successful. Please try again later or call at (623)878-4460 to schedule an appoinment.')
             return;
         }
 
@@ -182,7 +183,7 @@ function Request() {
                                 </select>
                                 <select id='day' name='day' onChange={(event) => setDay(event.target.value)}>
                                     <option value={0}>Select Day</option>
-                                    {days.map((d) => (<option value={d}>{d}</option>))}
+                                    {days.map((d) => (<option key={d} value={d}>{d}</option>))}
                                 </select>
                                 <select id='year' name='year' onChange={(event) => setYear(event.target.value)}>
                                     <option value={0}>Select Year</option>
