@@ -155,7 +155,8 @@
     align-items: center;
 }
 
-.request-button-container div {
+.request-button-container button {
+    border: none;
     width: 30%;
     height: 60px;
     color: white;
@@ -166,6 +167,10 @@
     align-items: center;
     border-radius: 30px;
     cursor: pointer;
+}
+
+.request-button-container button:hover{
+    background-color: #2e77bb;
 }
 
 .request-notice{

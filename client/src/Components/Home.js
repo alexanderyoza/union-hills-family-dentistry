@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Header from './Header';
 import homepage from '../Assets/ocean.png';
+import down from '../Assets/white-down.png';
 import SiteOverview from './SiteOverview';
 import SiteOverviewMobile from './SiteOverviewMobile';
 import Footer from './Footer';
@@ -39,7 +40,7 @@ function Home() {
 
     useEffect(() => {
         const checkMobile = () => {
-            const narrow = window.innerWidth <= 700;
+            const narrow = window.innerWidth <= 1000;
             setIsMobile(narrow);
         };
         window.scrollTo(0, 0);
@@ -69,6 +70,9 @@ function Home() {
                                     Request an appointment
                                 </Link>
                             </div>
+                        </div>
+                        <div className='home-downarrow'>
+                            <img src={down} alt='down arrow' />
                         </div>
                     </div>
                 </div>

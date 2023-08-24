@@ -270,9 +270,9 @@ function Request() {
                             </div>
                         </div>
                         <div className='small-spacing request-button-container'>
-                            <div onClick={handleSubmit}>
+                            <button onClick={handleSubmit}>
                                 Submit
-                            </div>
+                            </button>
                         </div>
                         <div className='request-notice'>
                             NOTICE: This is only a request. It is not a booked appointment.

@@ -19,7 +19,7 @@ function DenturesSolution() {
                     We have a solution for you!
                     All-on-4 dentures offer a transformative dental restoration
                     that combines the benefits of dental implants and fixed dentures.
-                    By strategically placing four dental implants in your jawbone, we
+                    By strategically placing four to six dental implants in your jawbone, we
                     secure a custom-designed denture that looks, feels, and functions just
                     like natural teeth.
                 </div>

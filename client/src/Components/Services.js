@@ -4,13 +4,13 @@ import { useNavigate } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
 import office from '../Assets/office.jpeg';
-import down from '../Assets/down.png';
+import down from '../Assets/black-down.png';
 import CosmeticPorcelainVeneersImg from '../Assets/ServiceImages/Veneer.jpeg';
 import TeethWhiteningImg from '../Assets/ServiceImages/WhiteningImg.jpeg';
 import ImplantRestorationsImg from '../Assets/ServiceImages/ImplantImg.jpeg';
 import TiredOfDenturesThatDontStayInImg from '../Assets/ServiceImages/DenturesComplete.jpeg';
 import InvisibleBracesImg from '../Assets/ServiceImages/InvisibleBracesImg.jpeg';
-import SameDayCrownImg from '../Assets/ServiceImages/Crown.jpeg';
+import SameDayCrownImg from '../Assets/ServiceImages/Crown-Icon.jpeg';
 
 function Services() {
 
@@ -29,7 +29,6 @@ function Services() {
                     <div className='services-overlay-image'>
                         <img src={office} alt='office' />
                     </div>
-                    
                     <div className='services-title-text'>
                         Explore the services that we offer
                     </div>
