@@ -4,7 +4,7 @@ import angie from '../../Assets/Staff/angie.jpeg'
 
 function Angie() {
     return (
-        <div className='team'>
+        <section className='team'>
             <div className='team-image-side'>
                 <img src={angie} alt='angie' />
             </div>
@@ -21,7 +21,7 @@ function Angie() {
                     Angela loves to travel and experience new cultures and food!
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

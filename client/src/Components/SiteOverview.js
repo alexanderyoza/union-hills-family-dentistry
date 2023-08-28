@@ -5,8 +5,8 @@ import logo from '../Assets/uhfd-logo.svg';
 
 function SiteOverview(props) {
   return (
-    <div className='site-overview'>
-        <div className='overview-section'>
+    <main className='site-overview'>
+        <section className='overview-section'>
             <div className='overview-side'>
                 <img id='overview-logo' src={logo} alt='union hills family dentistry logo' />
             </div>
@@ -15,8 +15,8 @@ function SiteOverview(props) {
                     {props.content['welcome']}
                 </div>
             </div>
-        </div>
-        <div className='overview-section'>
+        </section>
+        <section className='overview-section'>
             <div className='overview-side'>
                 <Link className='overview-header' to='/services'>
                     {props.content['services']}
@@ -25,8 +25,8 @@ function SiteOverview(props) {
             <div className='overview-side'>
                 <img className='overview-full-image' src={props.images['services']} alt='our services' />
             </div>
-        </div>
-        <div className='overview-section'>
+        </section>
+        <section className='overview-section'>
             <div className='overview-side'>
                 <img className='overview-full-image' src={props.images['office']} alt='our office' />    
             </div>
@@ -35,8 +35,8 @@ function SiteOverview(props) {
                     {props.content['office']}
                 </Link>   
             </div>
-        </div>
-        <div className='overview-section'>
+        </section>
+        <section className='overview-section'>
             <div className='overview-side'>
                 <Link className='overview-header' to='/staff'>
                     {props.content['team']}
@@ -45,8 +45,8 @@ function SiteOverview(props) {
             <div className='overview-side'>
                 <img className='overview-full-image' src={props.images['team']} alt='our team' />    
             </div>
-        </div>
-        <div className='overview-section'>
+        </section>
+        <section className='overview-section'>
             <div className='overview-side'>
                 <img className='overview-full-image' src={props.images['forms']} alt='forms' />    
             </div>
@@ -55,8 +55,8 @@ function SiteOverview(props) {
                     {props.content['forms']}
                 </Link>
             </div>
-        </div>
-    </div>
+        </section>
+    </main>
 
   )
 }

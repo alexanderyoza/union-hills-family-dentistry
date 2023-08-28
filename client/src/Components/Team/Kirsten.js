@@ -4,7 +4,7 @@ import kirsten from '../../Assets/Staff/kirsten.jpeg'
 
 function Kirsten() {
     return (
-        <div className='team'>
+        <section className='team'>
             <div className='team-image-side'>
                 <img src={kirsten} alt='kirsten' />
             </div>
@@ -19,7 +19,7 @@ function Kirsten() {
                     to check out new restaurants, play frolf, go geocaching, and traveling.
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

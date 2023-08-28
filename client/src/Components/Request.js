@@ -7,6 +7,7 @@ import { useState } from 'react';
 import axios from 'axios';
 
 function Request() {
+    const validDigits = [' ', '+', '-', '(', ')', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
 
     const [month, setMonth] = useState('0');
     const [day, setDay] = useState('0');
@@ -90,8 +91,13 @@ function Request() {
             return;
         }
 
-        if (phone.length !== 10 && phone.length !== 11) {
-            if (!phone.includes('(') && !phone.includes(')') && !phone.includes('-')&& !phone.includes('+')) {
+        if (phone.length < 10 || phone.length > 17) {
+            alert('Submit not successful. Please ensure that your phone number is correct.')
+            return;
+        }
+        
+        for (let c of phone) {
+            if (!validDigits.contains(c)) {
                 alert('Submit not successful. Please ensure that your phone number is correct.')
                 return;
             }
@@ -277,7 +283,7 @@ function Request() {
                         <div className='request-notice'>
                             NOTICE: This is only a request. It is not a booked appointment.
                             Our scheduling coordinator will contact you to confirm your appointment or
-                            please call at (623)878-4460.
+                            please call at (623) 878-4460.
                         </div>
                     </div>
                 </div>

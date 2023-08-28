@@ -4,7 +4,7 @@ import '../Styles/Footer.css';
 
 function Footer() {
     return (
-        <div className="footer">
+        <footer className="footer">
             <div className="footer-links">
                 <Link to="/" className="foot-link">Home</Link>
                 <Link to="/services" className="foot-link">Services</Link>
@@ -18,7 +18,7 @@ function Footer() {
             <div className="footer-copyright">
                 Copyright © 2023 Union Hills Family Dentistry. All rights reserved.
             </div>
-        </div>
+        </footer>
     );
 }
 

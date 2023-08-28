@@ -4,7 +4,7 @@ import shelby from '../../Assets/Staff/shelby.jpeg'
 
 function Shelby() {
     return (
-        <div className='team'>
+        <section className='team'>
             <div className='team-image-side'>
                 <img src={shelby} alt='shelby' />
             </div>
@@ -21,7 +21,7 @@ function Shelby() {
                     making candles and lotions for my online shop or playing video games.
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

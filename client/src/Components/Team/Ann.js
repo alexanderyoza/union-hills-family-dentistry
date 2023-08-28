@@ -4,7 +4,7 @@ import ann from '../../Assets/Staff/ann.jpeg'
 
 function Ann() {
     return (
-        <div className='team'>
+        <section className='team'>
             <div className='team-image-side'>
                 <img src={ann} alt='ann' />
             </div>
@@ -32,7 +32,7 @@ function Ann() {
                     have 1 granddaughter and a cat.
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

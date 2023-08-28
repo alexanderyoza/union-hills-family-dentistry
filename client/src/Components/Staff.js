@@ -27,7 +27,7 @@ function Staff() {
                 Meet Our Team
             </div>
             <div className='staff-content'>
-                <div className='dentist'>
+                <section className='dentist'>
                     <div className='dentist-image-side'>
                         <img src={ethan} alt='Doctor Ethan Yoza' />
                     </div>
@@ -145,7 +145,7 @@ function Staff() {
                         </div>
 
                     </div>
-                </div>
+                </section>
                 <Blanca />
                 <Angie />
                 <Kirsten />

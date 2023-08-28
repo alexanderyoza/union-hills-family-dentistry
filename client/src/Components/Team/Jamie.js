@@ -4,7 +4,7 @@ import jamie from '../../Assets/Staff/jamie.jpeg'
 
 function Jamie() {
     return (
-        <div className='team'>
+        <section className='team'>
             <div className='team-image-side'>
                 <img src={jamie} alt='jamie' />
             </div>
@@ -37,7 +37,7 @@ function Jamie() {
                
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

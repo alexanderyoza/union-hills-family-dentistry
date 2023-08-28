@@ -39,7 +39,7 @@ function Header(props) {
     const getLayout = () => {
         if(isMobile) {
             return (
-                <div className='header-cont-mobile'>
+                <header className='header-cont-mobile'>
                     <div className='header-mobile'>
                         <div className='header-rank-mobile'>
                             <img src={topdentist} alt='phoenix top ranked dentist' />
@@ -77,12 +77,12 @@ function Header(props) {
                             </Link>
                         </div>
                     </div>
-                </div>
+                </header>
             )
         }
 
         return (
-            <div className='header-cont'>
+            <header className='header-cont'>
                 <div className='header'>
                     <div className='header-title'>
                         <img src={logo} alt='uhfd logo' />
@@ -111,7 +111,7 @@ function Header(props) {
                         <img src={topdentist} alt='phoenix top ranked dentist' />
                     </div>
                 </div>
-            </div>
+            </header>
         );
     }
 

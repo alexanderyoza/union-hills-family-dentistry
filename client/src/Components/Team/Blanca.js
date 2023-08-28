@@ -4,7 +4,7 @@ import blanca from '../../Assets/Staff/blanca.jpeg'
 
 function Blanca() {
     return (
-        <div className='team'>
+        <section className='team'>
             <div className='team-image-side'>
                 <img src={blanca} alt='blanca' />
             </div>
@@ -21,7 +21,7 @@ function Blanca() {
                     Out of the office, Blanca enjoys spending time with her three children and hiking.
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 
