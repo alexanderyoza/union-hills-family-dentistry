@@ -10,7 +10,7 @@ import Footer from './Footer';
 import service from '../Assets/service.jpg';
 import team from '../Assets/team.jpg';
 import office from '../Assets/office.jpeg';
-import forms from '../Assets/forms.jpeg';
+import forms from '../Assets/forms.jpg';
 
 function Home() {
 
@@ -64,7 +64,7 @@ function Home() {
                         <div className='format-overlay'>
                             <div className='overlay-container'>
                                 <div className='landing-overlay-text'>
-                                    Unleashing Aloha: Transforming Your Dental Care Experience
+                                    Providing excellent dental care with the Aloha spirit
                                 </div>
                                 <Link className='landing-overlay-request-container' to='/request'>
                                     Request an appointment
