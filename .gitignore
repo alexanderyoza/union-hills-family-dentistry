@@ -22,6 +22,8 @@
 /client/yarn-debug.log*
 /client/yarn-error.log*
 
+/build
+
 
 node_modules
 .env
