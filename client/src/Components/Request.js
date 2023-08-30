@@ -97,7 +97,7 @@ function Request() {
         }
         
         for (let c of phone) {
-            if (!validDigits.contains(c)) {
+            if (!validDigits.includes(c)) {
                 alert('Submit not successful. Please ensure that your phone number is correct.')
                 return;
             }
