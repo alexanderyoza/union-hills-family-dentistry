@@ -1,6 +1,8 @@
 import '../Styles/SiteOverview.css';
 import { Link } from 'react-router-dom';
+import OverlayBlock from './OverlayBlock';
 import logo from '../Assets/uhfd-logo.svg';
+
 
 
 function SiteOverview(props) {
@@ -16,45 +18,52 @@ function SiteOverview(props) {
                 </div>
             </div>
         </section>
+          
         <section className='overview-section'>
-            <div className='overview-side'>
-                <Link className='overview-header' to='/services'>
-                    {props.content['services']}
-                </Link>
-            </div>
-            <div className='overview-side'>
-                <img className='overview-full-image' src={props.images['services']} alt='our services' />
-            </div>
+            <OverlayBlock
+                picture={props.images['services']}
+                alt='our services'
+                content={
+                    <Link className='overview-header' to='/services'>
+                        {props.content['services']}
+                    </Link>
+                }
+            />
         </section>
         <section className='overview-section'>
-            <div className='overview-side'>
-                <img className='overview-full-image' src={props.images['office']} alt='our office' />    
-            </div>
-            <div className='overview-side'>
-                <Link className='overview-header' to='/office'>
-                    {props.content['office']}
-                </Link>   
-            </div>
+            <OverlayBlock
+                picture={props.images['office']}
+                alt='our office'
+                content={
+                    <Link className='overview-header' to='/office'>
+                        {props.content['office']}
+                    </Link>
+            }
+            />
         </section>
         <section className='overview-section'>
-            <div className='overview-side'>
-                <Link className='overview-header' to='/staff'>
-                    {props.content['team']}
-                </Link>
-            </div>
-            <div className='overview-side'>
-                <img className='overview-full-image' src={props.images['team']} alt='our team' />    
-            </div>
+            <OverlayBlock
+                picture={props.images['team']}
+                alt='our team'
+                content={
+                    <Link className='overview-header' to='/staff'>
+                        {props.content['team']}
+                    </Link>
+                }
+            />
+            
         </section>
         <section className='overview-section'>
-            <div className='overview-side'>
-                <img className='overview-full-image' src={props.images['forms']} alt='forms' />    
-            </div>
-            <div className='overview-side'>
+            <OverlayBlock
+            picture={props.images['forms']}
+            alt='forms'
+            content={
                 <Link className='overview-header' to='/forms'>
                     {props.content['forms']}
                 </Link>
-            </div>
+            }
+            />
+            
         </section>
     </main>
 

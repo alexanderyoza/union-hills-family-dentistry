@@ -13,7 +13,7 @@ function Header(props) {
 
     useEffect(() => {
         const checkMobile = () => {
-            const narrow = window.innerWidth <= 900;
+            const narrow = window.innerWidth <= 1000;
             setIsMobile(narrow);
         };
 
@@ -107,9 +107,16 @@ function Header(props) {
                             <div className='header-link'>Request Appointment</div>
                         </Link>
                     </div>
-                    <div className='header-rank'>
-                        <img src={topdentist} alt='phoenix top ranked dentist' />
+                    <div className='header-logos'>
+
+                        <div className='bb-logo'>
+                            <a href="https://www.bbb.org/us/az/glendale/profile/dentist/union-hills-family-dentistry-1126-1000010655/#sealclick" target="_blank" rel="noreferrer"><img src="https://seal-central-northern-western-arizona.bbb.org/seals/blue-seal-200-42-bbb-1000010655.png" alt="Union Hills Family Dentistry BBB Business Review" /></a>
+                        </div>
+                        <div className='header-rank'>
+                            <img src={topdentist} alt='phoenix top ranked dentist' />    
+                        </div>
                     </div>
+                    
                 </div>
             </header>
         );

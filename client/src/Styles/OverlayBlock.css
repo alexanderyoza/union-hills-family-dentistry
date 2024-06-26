@@ -1,5 +1,6 @@
 #block-container {
     position: relative;
+    margin-bottom: 5px;
     width: 100%;
     height: min(86vh, calc(100vh - 100px));
 }
