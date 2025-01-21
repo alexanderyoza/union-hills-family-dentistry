@@ -10,7 +10,8 @@ import Angie from './Team/Angie';
 import Kirsten from './Team/Kirsten';
 import Ann from './Team/Ann';
 import Jamie from './Team/Jamie';
-import Shelby from './Team/Shelby';
+import Heather from './Team/Heather';
+import Kat from './Team/Kat';
 
 
 function Staff() {
@@ -151,7 +152,8 @@ function Staff() {
                 <Kirsten />
                 <Ann />
                 <Jamie />
-                <Shelby />
+                <Heather />
+                <Kat />
             </div>
             <Footer />
         </div>
